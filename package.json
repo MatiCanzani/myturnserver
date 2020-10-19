@@ -1,0 +1,41 @@
+{
+  "name": "jaguar",
+  "version": "1.0.0",
+  "description": "App reserva de turnos Gym",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+,
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MatiCanzani/myturn.git"
+  },
+  "author": "Mati Canzani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiCanzani/myturn/issues"
+  },
+  "homepage": "https://github.com/MatiCanzani/myturn#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.1",
+    "mongoose": "^5.10.3",
+    "nodejs": "0.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^8.1.0"
+  }
+}
